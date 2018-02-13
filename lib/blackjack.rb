@@ -41,6 +41,7 @@ def hit?(cardTotal)
   prompt_user
   var = cardTotal
   user_input = get_user_input
+  
   if user_input == 's'
     return var
   elsif user_input == 'h'
@@ -52,6 +53,7 @@ def hit?(cardTotal)
     hit?(var)
   else
     invalid_command
+    var
   end
   var
 
